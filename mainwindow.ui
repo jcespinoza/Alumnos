@@ -14,278 +14,311 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTableWidget" name="twTable">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>20</y>
-      <width>621</width>
-      <height>381</height>
+      <x>0</x>
+      <y>0</y>
+      <width>931</width>
+      <height>501</height>
      </rect>
     </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;click en el titulo para ordenarlo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
-    <column>
-     <property name="text">
-      <string># Cuenta</string>
-     </property>
-     <property name="whatsThis">
-      <string/>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Nombre</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Apellido</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Nota</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Nota 2</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Promedio</string>
-     </property>
-    </column>
-   </widget>
-   <widget class="QPushButton" name="bAddRow">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Agregar</string>
-    </property>
-    <property name="icon">
-     <iconset resource="Iconos.qrc">
-      <normaloff>:/new/icons/Resources/add</normaloff>:/new/icons/Resources/add</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bDeleteRow">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>270</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Eliminar</string>
-    </property>
-    <property name="icon">
-     <iconset resource="Iconos.qrc">
-      <normaloff>:/new/icons/Resources/delete</normaloff>:/new/icons/Resources/delete</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bSaveData">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>210</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Guardar</string>
-    </property>
-    <property name="icon">
-     <iconset resource="Iconos.qrc">
-      <normaloff>:/new/icons/Resources/save</normaloff>:/new/icons/Resources/save</iconset>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leNumeraCuenta">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>50</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leNombre">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>100</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leApellido">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>150</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblNumeroCuenta">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>30</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string># De Cuenta:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblNombre">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>80</y>
-      <width>46</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Nombre:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblApellido">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>130</y>
-      <width>46</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Apellido:</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bAddColumna">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>270</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Agregar Columna</string>
-    </property>
-    <property name="icon">
-     <iconset resource="Iconos.qrc">
-      <normaloff>:/new/icons/Resources/add</normaloff>:/new/icons/Resources/add</iconset>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leNota2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>100</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="leNota1">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>50</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblNota1">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>30</y>
-      <width>46</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Nota 1:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblNota2">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>80</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Nota 2:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblPromedio">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>130</y>
-      <width>46</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Promedio: </string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lePromedio">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>150</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Registro</string>
+     </attribute>
+     <widget class="QLineEdit" name="lePromedio">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leApellido">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblNombre">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblNota1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nota 1:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leNota1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblNumeroCuenta">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string># De Cuenta:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leNota2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bDeleteRow">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>250</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eliminar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Iconos.qrc">
+        <normaloff>:/new/icons/Resources/delete</normaloff>:/new/icons/Resources/delete</iconset>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leNombre">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bAddColumna">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>250</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Agregar Columna</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Iconos.qrc">
+        <normaloff>:/new/icons/Resources/add</normaloff>:/new/icons/Resources/add</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblNota2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>60</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nota 2:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bSaveData">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Iconos.qrc">
+        <normaloff>:/new/icons/Resources/save</normaloff>:/new/icons/Resources/save</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblApellido">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Apellido:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leNumeraCuenta">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bAddRow">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>190</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Agregar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Iconos.qrc">
+        <normaloff>:/new/icons/Resources/add</normaloff>:/new/icons/Resources/add</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblPromedio">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>110</y>
+        <width>46</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Promedio: </string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="twTable">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>0</y>
+        <width>621</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;click en el titulo para ordenarlo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string># Cuenta</string>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Apellido</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nota</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nota 2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Promedio</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Consulta</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>0</y>
+        <width>621</width>
+        <height>381</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -309,6 +342,19 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>leNumeraCuenta</tabstop>
+  <tabstop>leNombre</tabstop>
+  <tabstop>leApellido</tabstop>
+  <tabstop>leNota1</tabstop>
+  <tabstop>leNota2</tabstop>
+  <tabstop>lePromedio</tabstop>
+  <tabstop>bAddRow</tabstop>
+  <tabstop>bSaveData</tabstop>
+  <tabstop>bDeleteRow</tabstop>
+  <tabstop>bAddColumna</tabstop>
+  <tabstop>twTable</tabstop>
+ </tabstops>
  <resources>
   <include location="Iconos.qrc"/>
  </resources>
