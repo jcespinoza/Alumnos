@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>Resources/add</file>
+        <file>Resources/delete</file>
+        <file>Resources/save</file>
+        <file>Resources/promedio</file>
+    </qresource>
+</RCC>
