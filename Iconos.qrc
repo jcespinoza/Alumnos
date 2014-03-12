@@ -4,5 +4,6 @@
         <file>Resources/delete</file>
         <file>Resources/save</file>
         <file>Resources/promedio</file>
+        <file>Resources/change.ico</file>
     </qresource>
 </RCC>

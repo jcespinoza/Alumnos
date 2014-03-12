@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    filemanager.cpp
+    filemanager.cpp \
+    tabladedatos.cpp
 
 HEADERS  += mainwindow.h \
-    filemanager.h
+    filemanager.h \
+    tabladedatos.h
 
 FORMS    += mainwindow.ui
 
